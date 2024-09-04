@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="password-generator">
+    <h2>Generated Password</h2>
+
+    <div class="label">GENERATED PASSWORD</div>
+    <div class="password-box">
+        <span id="password">sZBseL181NEj</span>
+        <div class="icon-buttons">
+            <img src="./files_8556173.png" alt="Copy" title="Copy">
+            <img src="./refresh.png" alt="Refresh" title="Refresh">
+        </div>
+    </div>
+
+    <div class="label">CHARACTER LENGTH:</div>
+    <div class="slider-container">
+        <span>12</span>
+        <input type="range" id="length" min="12" max="32" value="12">
+        <span>32</span>
+        <div class="current-length" id="current-length">12</div>
+    </div>
+
+    <div class="label">SETTINGS</div>
+    <div class="settings">
+        <label for="uppercase">Include Uppercase Letters
+            <div class="toggle">
+                <input type="checkbox" id="uppercase" class="toggle-checkbox">
+                <div class="toggle-switch"></div>
+            </div>
+        </label>
+        <label for="lowercase">Include Lowercase Letters
+            <div class="toggle">
+                <input type="checkbox" id="lowercase" class="toggle-checkbox" checked>
+                <div class="toggle-switch"></div>
+            </div>
+        </label>
+        <label for="numbers">Include Numbers
+            <div class="toggle">
+                <input type="checkbox" id="numbers" class="toggle-checkbox" checked>
+                <div class="toggle-switch"></div>
+            </div>
+        </label>
+        <label for="symbols">Include Symbols
+            <div class="toggle">
+                <input type="checkbox" id="symbols" class="toggle-checkbox">
+                <div class="toggle-switch"></div>
+            </div>
+        </label>
+    </div>
+
+    <div class="generate-btn-container">
+        <div class="generate-btn">Generate Password</div>
+    </div>
+</div>
+
+</body>
+</html>
